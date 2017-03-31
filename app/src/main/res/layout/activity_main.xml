@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sti.tokhang.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="586dp"
+        android:layout_height="807dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/btnMic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="User" />
+
+        <TextView
+            android:id="@+id/txtInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="18dp"
+            android:gravity="right"
+            android:text="How to use?" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtInput"
+            android:layout_marginTop="22dp"
+            android:text="Tokhang:" />
+
+        <TextView
+            android:id="@+id/txtOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="33dp"
+            android:text="Click the mic icon and speak.." />
+
+        <Button
+            android:id="@+id/mapbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_toStartOf="@+id/btnMic"
+            android:background="@drawable/maps" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/btnMic" />
+
+        <Button
+            android:id="@+id/btnAid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="First Aid Instruction"
+            android:layout_below="@+id/txtOutput"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn911"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnAid"
+            android:layout_alignStart="@+id/btnAid"
+            android:layout_below="@+id/btnAid"
+            android:layout_marginTop="28dp"
+            android:text="Call 911" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
